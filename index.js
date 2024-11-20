@@ -6,6 +6,10 @@ app.get("/sayHello", (req, res) => {
   res.json({ message: "Hello User!" });
 });
 
+app.get("/sayHello/:name", (req, res) => {
+  //send json response
+  res.json({ message: `Hello ${req.params.name}!` });
+});
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 }
