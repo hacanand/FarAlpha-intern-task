@@ -3,7 +3,7 @@ const app = express();
 
 app.get("/sayHello", (req, res) => {
   //send json response
-  res.json({ message: "Hello User!" });
+  res.json({ message: "Hello User! hi how are you" });
 });
 
 app.get("/api", (req, res) => {
